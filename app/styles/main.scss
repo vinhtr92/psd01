@@ -2,7 +2,6 @@
 @import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 @import "bower_components/slick-carousel/slick/slick-theme.scss";
-
 @import "bower_components/bootstrap/scss/bootstrap";
 
 @import "components/button";
@@ -10,16 +9,7 @@
 @import "utils/mixin";
 @import "utils/variables";
 @import "base/typography";
-// @import "utils/custom";
-
-
-@import "vendor/fontawesome/fontawesome.scss";
-@import "vendor/fontawesome/fa-solid.scss";
-@import "vendor/fontawesome/fa-regular.scss";
-@import "vendor/fontawesome/fa-brands.scss";
 @import "themes/theme.scss";
-
-
 
 
 
@@ -30,37 +20,32 @@
   padding: 0.2em 0;
 }
 
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-}
-
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 90px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
 
 //TYPOGRAPHY
 
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
+  letter-spacing: 1px;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+.search-form {
+  .form-control {
+    letter-spacing: inherit;
+
+    @include media-breakpoint-up(md){
+      width: 250px;
+    }
+  }
+
+  button[type="submit"] {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
 }
 
 .intro-item {
@@ -99,6 +84,7 @@ a:hover {
    ul {
     padding: 0;
   }
+
    li {
     list-style: none;
     border-bottom: 1px solid #232323;
@@ -145,6 +131,14 @@ a:hover {
   color: #666;
   .row {
     background-color: $footer-bg;
+  }
+}
+
+.contact-form {
+  font-size: 13px;
+
+  input[type="submit"] {
+    letter-spacing: 2px;
   }
 }
 
