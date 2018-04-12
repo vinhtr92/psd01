@@ -20,7 +20,6 @@
   padding: 0.2em 0;
 }
 
-
 //TYPOGRAPHY
 
 body {
@@ -33,7 +32,29 @@ a:hover {
   text-decoration: none;
 }
 
-.search-form {
+/* .menu-bar {
+  .row {
+    background: $topbar-bg;
+    padding: 15px ;
+  }
+
+  .logo {
+    filter: invert(100%);
+    object-fit: cover;
+    width: 30%;
+    height: 25%;
+  }
+
+  @include media-breakpoint-up(md){
+    .logo {
+      object-fit: initial;
+      filter: invert(0);
+      width: initial;
+      height: initial;
+    }
+  }
+} */
+/* .search-form {
   .form-control {
     letter-spacing: inherit;
 
@@ -44,39 +65,183 @@ a:hover {
 
   button[type="submit"] {
     text-transform: uppercase;
-    font-weight: 300;
+  }
+} */
+
+/* .navigation {
+  ul.active {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+} */
+
+.social {
+  font-size: 14px;
+
+  span {
+    background: #787878;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s all;
+    margin-right: 5px;
+
+    &:hover {
+      background: #db4a39;
+      transition: .3s all;
+    }
+  }
+
+  a.social__link {
+    line-height: 35px;
+    display: block;
+    color: $white;
   }
 }
 
-.intro-item {
-  .intro-item__title {
-    font-size: 16px;
-  }
-}
 
-.main-menu {
+
+/* .main-menu {
   a.nav-item {
     font-size: 14px;
     text-transform: uppercase;
   }
-}
+} */
 
-.top-bar {
+/* .top-bar {
   color: #9f9f9f;
-
   .row {
     background-color: #2e2e2e;
+    padding: 12px 0;
   }
 
   a {
     color: inherit;
   }
+} */
+
+/* .top-links {
+  font-size: 12px;
+  padding-top: 10px;
+
+  a {
+    border-right: 1px solid #9f9f9f;
+    display: inline-block;
+    padding: 0 10px;
+
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:first-child {
+      padding: 0;
+      padding-right: 10px;
+    }
+  }
+} */
+
+.top-bar {
+  .row {
+    background: $topbar-bg;
+  }
 }
 
-.top-links {
-  font-size: 12px;
-  @include media-breakpoint-up(md){
-    padding: 0 5px;
+.main-menu {
+  padding: 10px 0 ;
+
+  .main-menu__logo img{
+    height: 40px;
+    filter: invert(100%);
+  }
+
+  .main-menu__btn {
+    color: $mobile-btn-color;
+    font-size: 16px;
+  }
+
+  .search-form {
+    padding: 10px 0;
+    // width: 100vw;
+  }
+
+  .main-menu__btn {
+    float: right;
+    padding-top: 8px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    border-bottom: 1px solid lighten($topbar-bg, 5%);
+  }
+
+  .top-links-item,
+  .nav-item {
+    text-transform: uppercase;
+    padding: 10px ;
+    display: block;
+    transition: .3s all;
+
+    &:hover {
+      background-color: lighten($topbar-bg, 10%);
+      color: $white;
+      transform: translateX(5px);
+      transition: .3s all;
+
+      &:before {
+        content : "»";
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .main-menu__nav {
+    background-color: $topbar-bg;
+    display: none;
+  }
+
+}
+
+.slider-content {
+  margin: 100px 0  30px 0;
+
+  .slider-content__title,
+  .slider-content__desc {
+    margin-bottom: 20px;
+  }
+}
+
+.intro {
+  padding: 40px 0;
+}
+
+.intro-item {
+  margin: 20px 0 40px;
+  text-align: center;
+
+  .intro-item__title {
+    font-size: 16px;
+    color: $primary;
   }
 }
 
@@ -89,12 +254,6 @@ a:hover {
     list-style: none;
     border-bottom: 1px solid #232323;
     transition: .3s all;
-
-    &::before {
-      content: "»";
-      position: absolute;
-      left: 8px;
-    };
 
     &:last-child {
       border-bottom: none;
@@ -110,10 +269,15 @@ a:hover {
     }
   }
 
-  .quick-links__item {
+  a.quick-links__item {
     padding-left: 10px;
     line-height: 24px;
     display: block;
+
+    &::before {
+    content: "»";
+      padding-right: 5px;
+    }
   }
 }
 
@@ -131,6 +295,11 @@ a:hover {
   color: #666;
   .row {
     background-color: $footer-bg;
+    padding: 20px 0;
+
+    @include media-breakpoint-up(md){
+      padding: 40px 0;
+    }
   }
 }
 
@@ -143,8 +312,14 @@ a:hover {
 }
 
 .lastest-item {
+  margin-bottom: 20px;
   .lastest-item__title {
     font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .lastest-item__date {
+    padding-bottom: 8px;
   }
 
   .lastest-item__user,
@@ -157,4 +332,37 @@ a:hover {
   }
 }
 
+.footer-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $white;
+
+  margin-bottom: 15px;
+}
+
+
+.readmore {
+  text-transform: capitalize;
+  float: none;
+  &::after {
+    content: "»";
+    padding-left: 5px;
+  }
+
+  @include media-breakpoint-up(md){
+    float: right;
+  }
+}
+.about-us,
+.quick-links,
+.lastest,
+.contact-form {
+  margin-bottom: 40px;
+}
+
+.readmore.btn {
+  text-transform: uppercase;
+  font-size: 16px;
+  float: none;
+}
 
