@@ -8,40 +8,39 @@ $(document).ready(function(){
   });
 
 
-  const newDiv = $("<div class='main-nav'><div class='row'><div class='col-12'></div></div>")
+  const newDiv = $('<div class=\'main-nav\'><div class=\'row\'><div class=\'col-12\'></div></div>')
 
-  const newDiv2 = $("<div class='main-logo'><div class='row'><div class='col-md-6'></div><div class='col-md-6'></div></div></div>")
+  const newDiv2 = $('<div class=\'main-logo\'><div class=\'row\'><div class=\'col-md-6\'></div><div class=\'col-md-6\'></div></div></div>')
 
-  const newDiv3 = $("<div class='row'><div class='col-md-6'></div><div class='col-md-6'></div></div>")
+  const newDiv3 = $('<div class=\'row\'><div class=\'col-md-6\'></div><div class=\'col-md-6\'></div></div>')
 
 
-  $(".main-menu__btn").click(function(){
-    $(".main-menu__nav").slideToggle("fast")
+  $('.main-menu__btn').click(function(){
+    $('.main-menu__nav').slideToggle('fast')
   });
 
 
 
   if(screen.width >= 768){
-    $(".top-bar").after(newDiv,newDiv2);
-    $(".main-menu").prepend(newDiv3);
+    $('.top-bar').after(newDiv,newDiv2);
+    $('.main-menu').prepend(newDiv3);
 
-    $(".main-menu__btn").remove();
+    $('.main-menu__btn').remove();
     // $(".main-menu__nav").remove();
     // $(".main-menu__logo img").remove();
-    $(".top-links").appendTo($(".main-menu .row .col-md-6:nth-child(1)"));
+    $('.top-links').appendTo($('.main-menu .row .col-md-6:nth-child(1)'));
 
-    $(".social").appendTo($(".main-menu .row .col-md-6:nth-child(2)")).addClass("float-md-right");
+    $('.social').appendTo($('.main-menu .row .col-md-6:nth-child(2)')).addClass('float-md-right');
 
-    $(".main-menu__logo").appendTo(".main-logo .row .col-md-6:nth-child(1)");
+    $('.logo').appendTo('.main-logo .row .col-md-6:nth-child(1)');
 
-    $(".search-form").appendTo(".main-logo .row .col-md-6:nth-child(2)");
+    $('.search-form').appendTo('.main-logo .row .col-md-6:nth-child(2)');
 
-    $(".main-menu__nav").appendTo(".main-nav .row .col-12" );
+    $('.main-links').appendTo('.main-nav .row .col-12' );
 
-    $(".main-links li").click(function(){
-      $(".main-links li ").removeClass("is-active");
-      $(this).addClass("is-active");
-
+    $('.main-links li').click(function(){
+      $('.main-links li ').removeClass('is-active');
+      $(this).addClass('is-active');
     })
   };
 });
