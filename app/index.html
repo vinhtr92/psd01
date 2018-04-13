@@ -1,362 +1,391 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>generator webapp</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>generator webapp</title>
 
-    <!-- build:css styles/vendor.css -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+    crossorigin="anonymous">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if IE]>
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <!-- <header>
-        <section class="top-bar">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 ">
+  <div class="container">
 
+    <section class="header">
+      <div class="top-bar">
+        <div class="row">
+          <div class="col-12">
+            <div class="main-menu">
+              <a href="#" class="main-menu__logo">
+                <img src="./images/logo/Logo.png" alt="logo">
+              </a>
 
-            </div>
-            <div class="col-sm-12 col-md-6 ">
+              <a href="#" class="main-menu__btn">
+                <i class="fa fa-bars"></i>
+              </a>
 
-            </div>
-          </div>
-        </section>
+              <nav class="main-menu__nav">
+                <div class="search-form">
+                  <form action="#" class="form-inline form-row float-md-right">
+                    <div class="col">
+                      <input type="text" name="search" placeholder="Search Our Website..." class="form-control form-control-sm">
+                    </div>
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary btn-sm">
+                        </i>search</button>
+                    </div>
+                  </form>
+                </div>
 
-        <section class="main-menu">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 order-md-2">
-              <img src="./images/logo/Logo.png" alt="logo" class="logo img-fluid">
-            </div>
-
-            <div class="col-sm-12 col-md-6 order-md-2">
-
-            </div>
-
-            <div class="col-sm-12 order-md-1">
-              <nav class="navigation">
-                <ul class="active">
-                  <li><a href="#" class="nav-item">homepage</a></li>
-                  <li><a href="#" class="nav-item">style demo</a></li>
-                  <li><a href="#" class="nav-item">fullwidth</a></li>
-                  <li><a href="#" class="nav-item">dropdown</a></li>
-                  <li><a href="#" class="nav-item">gallery</a></li>
-                  <li><a href="#" class="nav-item">portfolio</a></li>
-                  <li><a href="#" class="nav-item">link text</a></li>
-                  <li><a href="#" class="nav-item">long link text</a></li>
-                </ul>
-              </nav>
-              </div>
-          </div>
-        </section>
-      </header> -->
-      <section class="header">
-        <div class="top-bar">
-            <div class="row">
-            <div class="col-12">
-              <div class="main-menu">
-                <a href="#" class="main-menu__logo">
-                  <img src="./images/logo/Logo.png" alt="logo">
-                </a>
-
-                <a href="#" class="main-menu__btn">
-                  <i class="fa fa-bars"></i>
-                </a>
-
-                <nav class="main-menu__nav">
-                    <div class="search-form">
-                        <form action="#" class="form-inline form-row float-md-right">
-                          <div class="col">
-                              <input type="text" name="search" placeholder="Search Our Website..." class="form-control form-control-sm" >
-                          </div>
-                          <div class="col">
-                              <button type="submit" class="btn btn-primary btn-sm"></i>search</button>
-                          </div>
-                        </form>
-                      </div>
-
-                      <div class="top-links">
-                          <ul>
-                            <li>
-                              <a href="#" class="top-links-item">Sign Up</a>
-                            </li>
-                            <li>
-                              <a href="#" class="top-links-item">Login</a>
-                            </li>
-                            <li>
-                              <a href="#" class="top-links-item">RSS Feeds</a>
-                            </li>
-                            <li>
-                              <a href="#" class="top-links-item">Archived News</a>
-                            </li>
-                          </ul>
-                        </div>
-
-
-                  <ul class="main-links">
-                      <li class="is-active"><a href="#" class="nav-item">homepage</a></li>
-                      <li><a href="#" class="nav-item">style demo</a></li>
-                      <li><a href="#" class="nav-item">fullwidth</a></li>
-                      <li><a href="#" class="nav-item">dropdown</a></li>
-                      <li><a href="#" class="nav-item">gallery</a></li>
-                      <li><a href="#" class="nav-item">portfolio</a></li>
-                      <li><a href="#" class="nav-item">link text</a></li>
-                      <li><a href="#" class="nav-item">long link text</a></li>
-
-                      <div class="main-links__indicator-container">
-
-                      </div>
+                <div class="top-links">
+                  <ul>
+                    <li>
+                      <a href="#" class="top-links-item">Sign Up</a>
+                    </li>
+                    <li>
+                      <a href="#" class="top-links-item">Login</a>
+                    </li>
+                    <li>
+                      <a href="#" class="top-links-item">RSS Feeds</a>
+                    </li>
+                    <li>
+                      <a href="#" class="top-links-item">Archived News</a>
+                    </li>
                   </ul>
+                </div>
 
-                  <div class="social">
-                      <span><a href="#"class="social__link"><i class="fab fa-twitter"></i></a></span>
-                      <span><a href="#"class="social__link"><i class="fab fa-linkedin-in"></i></a></span>
-                      <span><a href="#"class="social__link"><i class="fab fa-pinterest"></i></a></span>
-                      <span><a href="#"class="social__link"><i class="fab fa-google-plus-g"></i></a></span>
-                      <span><a href="#"class="social__link"><i class="fas fa-rss"></i></a></span>
+
+                <ul class="main-links">
+                  <li class="is-active">
+                    <a href="#" class="nav-item">homepage</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-item">style demo</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-item">fullwidth</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-item">dropdown</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-item">gallery</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-item">portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-item">link text</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-item">long link text</a>
+                  </li>
+
+                  <div class="main-links__indicator-container">
+
                   </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
+                </ul>
 
-
-        <!-- <div class="main-logo">
-          <div class="row">
-
-          </div>
-        </div> -->
-      </section>
-
-
-
-
-      <section class="slider">
-        SLIDER SECTION
-        <div class="slider-item">
-          <div class="row">
-            <div class="col-sm-12 col-md-5">
-              <div class="slider-content">
-                <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
-                <div class="slider-content__desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
+                <div class="social">
+                  <span>
+                    <a href="#" class="social__link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="#" class="social__link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="#" class="social__link">
+                      <i class="fab fa-pinterest"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="#" class="social__link">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="#" class="social__link">
+                      <i class="fas fa-rss"></i>
+                    </a>
+                  </span>
                 </div>
-                <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-7">
-              <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
-          </div>
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="row">
-            <div class="col-sm-12 col-md-5">
-              <div class="slider-content">
-                <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
-                <div class="slider-content__desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
-                </div>
-                <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-7">
-              <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
+              </nav>
             </div>
           </div>
         </div>
-        <div class="slider-item">
-          <div class="row">
-            <div class="col-sm-12 col-md-5">
-              <div class="slider-content">
-                <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
-                <div class="slider-content__desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
-                </div>
-                <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-7">
-              <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
-            </div>
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="row">
-            <div class="col-sm-12 col-md-5">
-              <div class="slider-content">
-                <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
-                <div class="slider-content__desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
-                </div>
-                <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-7">
-              <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
 
-      <section class="intro">
-        INTRO SECTION
+    <section class="slider">
+      SLIDER SECTION
+      <div class="slider-item">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <img src="./images/intro.png" alt="multil devices" class="img-fluid intro-img">
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <div class="intro-item">
-                  <img src="http://via.placeholder.com/85x80" alt="intro item image">
-                  <h4 class="intro-item__title">Lorem ipsum dolor sit amet.</h4>
-                  <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
-                </div>
+          <div class="col-sm-12 col-md-5">
+            <div class="slider-content">
+              <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
+              <div class="slider-content__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
               </div>
-              <div class="col-sm-12 col-md-6">
-                <div class="intro-item">
-                  <img src="http://via.placeholder.com/85x80" alt="intro item image">
-                  <h4 class="intro-item__title">Lorem ipsum dolor sit amet.</h4>
-                  <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6">
-                <div class="intro-item">
-                  <img src="http://via.placeholder.com/85x80" alt="intro item image">
-                  <h4 class="intro-item__title">Lorem ipsum dolor sit amet.</h4>
-                  <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6">
-                <div class="intro-item">
-                  <img src="http://via.placeholder.com/85x80" alt="intro item image">
-                  <h4 class="intro-item__title">Lorsem ipsum dolor sit amet.</h4>
-                  <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
-                </div>
-              </div>
+              <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
             </div>
           </div>
+          <div class="col-sm-12 col-md-7">
+            <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
+          </div>
         </div>
+      </div>
 
-        <div class="shout">
-          SHOUT HERE
-        </div>
-      </section>
-
-
-      <section class="footer">
+      <div class="slider-item">
         <div class="row">
-          <div class="col-sm-12 col-md-3">
-            <div class="about-us">
-              <div class="footer-title">
-                about us
+          <div class="col-sm-12 col-md-5">
+            <div class="slider-content">
+              <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
+              <div class="slider-content__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
               </div>
-              <img src="http://via.placeholder.com/215x90" alt="about us" class="img-fluid">
-              <div class="about-us__desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet id quisquam nesciunt possimus quia ipsa.
-              </div>
-              <a href="#" class="readmore">Read More</a>
+              <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
             </div>
           </div>
+          <div class="col-sm-12 col-md-7">
+            <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
+          </div>
+        </div>
+      </div>
 
-          <div class="col-sm-12 col-md-3">
-            <div class="quick-links">
-              <div class="footer-title">
+      <div class="slider-item">
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <div class="slider-content">
+              <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
+              <div class="slider-content__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
+              </div>
+              <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item">
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <div class="slider-content">
+              <h4 class="slider-content__title">Lorem ipsum dolor sit amet consectetur .</h4>
+              <div class="slider-content__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus ad eaque itaque incidunt quibusdam.
+              </div>
+              <a href="#" class="readmore btn btn-primary btn-sm">read more</a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <img class="slider-img img-fluid" src="http://via.placeholder.com/550x440" alt="slider image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="intro">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img src="./images/intro.png" alt="multil devices" class="img-fluid intro-img">
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="intro-item">
+                <img src="http://via.placeholder.com/85x80" alt="intro item image">
+                <h4 class="intro-item__title">Lorem ipsum dolor sit amet.</h4>
+                <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="intro-item">
+                <img src="http://via.placeholder.com/85x80" alt="intro item image">
+                <h4 class="intro-item__title">Lorem ipsum dolor sit amet.</h4>
+                <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="intro-item">
+                <img src="http://via.placeholder.com/85x80" alt="intro item image">
+                <h4 class="intro-item__title">Lorem ipsum dolor sit amet.</h4>
+                <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="intro-item">
+                <img src="http://via.placeholder.com/85x80" alt="intro item image">
+                <h4 class="intro-item__title">Lorsem ipsum dolor sit amet.</h4>
+                <div class="intro-item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptas?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shout">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="shout-item">
+              <h4 class="shout-item__title">Lorem ipsum dolor sit amet consectetur.</h4>
+              <div class="shout-item__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores!
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <a class="btn btn-primary " href="#">contact us today</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="footer">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="about-us">
+            <div class="footer-title">
+              about us
+            </div>
+            <img src="http://via.placeholder.com/215x90" alt="about us" class="img-fluid">
+            <div class="about-us__desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet id quisquam nesciunt possimus quia ipsa.
+            </div>
+            <a href="#" class="readmore">Read More</a>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3">
+          <div class="quick-links">
+            <div class="footer-title">
               quick links
-              </div>
-              <ul>
-                <li><a href="#"class="quick-links__item">Lorem ipsum dolor sit amet.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem ipsum dolor sit.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem, ipsum.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem ipsum dolor sit amet consectetur.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem, ipsum dolor.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem ipsum dolor sit amet.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem ipsum dolor sit amet consectetur.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem ipsum dolor sit.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem, ipsum.</a></li>
-                <li><a href="#"class="quick-links__item">Lorem ipsum dolor sit amet.</a></li>
-              </ul>
             </div>
+            <ul>
+              <li>
+                <a href="#" class="quick-links__item">Lorem ipsum dolor sit amet.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem ipsum dolor sit.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem, ipsum.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem ipsum dolor sit amet consectetur.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem ipsum dolor sit amet.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem ipsum dolor sit amet consectetur.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem ipsum dolor sit.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem, ipsum.</a>
+              </li>
+              <li>
+                <a href="#" class="quick-links__item">Lorem ipsum dolor sit amet.</a>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-sm-12 col-md-3">
-            <div class="lastest">
-              <div class="footer-title">
-                  lastest post
-              </div>
-
-              <div class="lastest-item">
-                <h4 class="lastest-item__title">Lorem ipsum dolor sit amet.</h4>
-                <div class="lastest-item__user">Lorem, ipsum dolor</div>
-                <div class="lastest-item__date">Friday,6th April 2018</div>
-                <div class="lastest-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odit facilis ex mollitia nisi atque</div>
-                <a href="#" class="readmore">read more</a>
-              </div>
-              <div class="lastest-item">
-                <h4 class="lastest-item__title">Lorem ipsum dolor sit amet.</h4>
-                <div class="lastest-item__user">Lorem, ipsum dolor</div>
-                <div class="lastest-item__date">Friday,6th April 2018</div>
-                <div class="lastest-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odit facilis ex mollitia nisi atque</div>
-                <a href="#" class="readmore">read more</a>
-              </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="lastest">
+            <div class="footer-title">
+              lastest post
             </div>
-          </div>
 
-          <div class="col-sm-12 col-md-3">
-            <div class="contact-form">
-              <div class="footer-title">
-              contact
-              </div>
-              <form action="#" class="form-row" >
-                <input type="text" name="name" id="nameInput" placeholder="Name "class="form-control form-control-sm m-1">
-                <input type="text" name="email" id="emailInput " placeholder="Email"class="form-control form-control-sm m-1">
-                <input type="text" name="subject" id="subjectInput " placeholder="Subject"class="form-control form-control-sm m-1">
-                <textarea name="message" id="messageInput"  placeholder="Message" class="form-control form-control-sm m-1" rows="5"></textarea>
-                <input type="submit" value="SUBMIT" class="btn btn-primary btn-sm m-1 py-1 px-2 ">
-              </form>
+            <div class="lastest-item">
+              <h4 class="lastest-item__title">Lorem ipsum dolor sit amet.</h4>
+              <div class="lastest-item__user">Lorem, ipsum dolor</div>
+              <div class="lastest-item__date">Friday,6th April 2018</div>
+              <div class="lastest-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odit facilis ex mollitia nisi atque</div>
+              <a href="#" class="readmore">read more</a>
+            </div>
+            <div class="lastest-item">
+              <h4 class="lastest-item__title">Lorem ipsum dolor sit amet.</h4>
+              <div class="lastest-item__user">Lorem, ipsum dolor</div>
+              <div class="lastest-item__date">Friday,6th April 2018</div>
+              <div class="lastest-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odit facilis ex mollitia nisi atque</div>
+              <a href="#" class="readmore">read more</a>
             </div>
           </div>
         </div>
 
-        <div class="copyrights">
-          COPYRIGHT
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              copyright
+        <div class="col-sm-12 col-md-3">
+          <div class="contact-form">
+            <div class="footer-title">
+              contact
             </div>
-            <div class="col-sm-12 col-md-6">
-              template by
+            <form action="#" class="form-row">
+              <input type="text" name="name" id="nameInput" placeholder="Name " class="form-control form-control-sm m-1">
+              <input type="text" name="email" id="emailInput " placeholder="Email" class="form-control form-control-sm m-1">
+              <input type="text" name="subject" id="subjectInput " placeholder="Subject" class="form-control form-control-sm m-1">
+              <textarea name="message" id="messageInput" placeholder="Message" class="form-control form-control-sm m-1" rows="5"></textarea>
+              <input type="submit" value="SUBMIT" class="btn btn-primary btn-sm m-1 py-1 px-2 ">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="copyrights">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+              Copyright © 2013 Domain Name - All Rights Reserved
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="float-md-right">
+                Template by OS Templates
             </div>
           </div>
         </div>
       </section>
-    </div>
+  </div>
 
 
 
@@ -365,26 +394,29 @@
 
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+      function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+  </script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>
