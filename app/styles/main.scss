@@ -151,10 +151,60 @@ a:hover {
   }
 } */
 
+.main-links,
+.top-links {
+  a {
+    text-transform: uppercase;
+    padding: 10px ;
+    display: block;
+    transition: .3s all;
+
+/*     &:hover {
+      background-color: lighten($topbar-bg, 10%);
+      color: $white;
+      transform: translateX(5px);
+      transition: .3s all;
+
+      &:before {
+        content : "»";
+        padding-right: 5px;
+        transition: .3s all;
+      }
+    } */
+  }
+}
+
+.top-links {
+  @include media-breakpoint-up(md){
+    margin-top: 18px;
+    li {
+      display: inline-block;
+      border-bottom: none !important ;
+
+      &:last-child a {
+        border-right: none;
+
+      }
+    }
+
+    a {
+      color: $topbar-color;
+      padding: 0 5px;
+      text-transform: capitalize;
+      border-right: 1px solid $topbar-color;
+    }
+  }
+}
+
 .top-bar {
   .row {
     background: $topbar-bg;
+
+    @include media-breakpoint-only(md){
+      background: none !important;
+    }
   }
+
 }
 
 .main-menu {
@@ -172,7 +222,6 @@ a:hover {
 
   .search-form {
     padding: 10px 0;
-    // width: 100vw;
   }
 
   .main-menu__btn {
@@ -190,25 +239,7 @@ a:hover {
     border-bottom: 1px solid lighten($topbar-bg, 5%);
   }
 
-  .top-links-item,
-  .nav-item {
-    text-transform: uppercase;
-    padding: 10px ;
-    display: block;
-    transition: .3s all;
 
-    &:hover {
-      background-color: lighten($topbar-bg, 10%);
-      color: $white;
-      transform: translateX(5px);
-      transition: .3s all;
-
-      &:before {
-        content : "»";
-        padding-right: 5px;
-      }
-    }
-  }
 
   .social {
     margin-top: 10px;
@@ -219,6 +250,75 @@ a:hover {
     background-color: $topbar-bg;
     display: none;
   }
+
+  @include media-breakpoint-up(md){
+    padding: 0;
+
+    .social {
+      margin: 0 !important;
+    }
+  }
+}
+
+.main-links {
+
+  margin: 0;
+  padding: 0;
+
+  .nav-item {
+    // display: inline-block;
+
+  }
+
+  .main-links__indicator-container  {
+    display: none;
+  }
+  .is-active {
+    border-bottom: none;
+  }
+
+  @include media-breakpoint-up(md){
+    margin-top: 20px;
+
+    .is-active {
+      border-bottom: 4px solid $primary;
+    }
+
+    li {
+
+      display: inline-block;
+      border-bottom: 4px solid $border-color-gray;
+      margin-right: 20px;
+
+      &:hover {
+        border-bottom: 4px solid $primary;
+
+      }
+    }
+
+    .nav-item {
+      font-size: 14px;
+      color: $topbar-bg;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+
+  }
+
+  @include media-breakpoint-up(xl){
+    .main-links__indicator-container  {
+      display: block;
+      height: 4px;
+      background-color: $border-color-gray;
+      position: absolute;
+      left: 20px;
+      right: 0;
+      z-index: -1;
+      transform: translateY(-4px)
+    }
+  }
+
 
 }
 
